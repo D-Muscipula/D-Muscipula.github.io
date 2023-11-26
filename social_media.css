@@ -1,0 +1,73 @@
+.social{
+    width: 100%;
+    height: 10vh;
+    margin-top: 2vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+
+  .social__icon{
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 5vw;
+    height: 5vw;
+    margin: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: 3vw;
+    overflow:hidden;
+    
+  }
+  
+  .social__icon i {
+    font-size: 26px;
+    color: #f2f2f2;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  .social__icon.git{
+    cursor:url('xex.png'), pointer;
+  }
+  .social__icon.twitter{
+    cursor:url('cursor.png'), pointer;
+  }
+  .social__icon.linkedin{
+    cursor:url('ScaredCat.png'), pointer;
+  }
+  .social__icon:after{
+    content: "";
+    width: 5vw;
+    height: 5vw;
+    position:absolute;
+    transform: translate(0, -80px);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .social__icon.git:after{
+    background: linear-gradient(	rgb(73, 216, 73), rgb(100, 0, 40));
+  }
+  .social__icon.twitter:after{
+    background: linear-gradient(rgb(119, 119, 199), blue);;
+  }
+  .social__icon.linkedin:after{
+    background: linear-gradient(yellow, rgb(232, 125, 18), red);
+  }
+  .social__icon:hover {
+    transform: translateY(-4px);
+    
+  }
+  /*
+  .social__icon:hover i{
+     color: #fff;
+  }*/
+  
+  .social__icon:hover:after{
+    transform: translate(0);
+  }
