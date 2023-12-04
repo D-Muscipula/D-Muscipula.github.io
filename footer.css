@@ -3,32 +3,34 @@
     justify-content: end;
     align-content: end;
     
-    min-height: 110vh;
+    min-height: 50vh;
     overflow: hidden;
     width:100vw;  
     bottom: 0;
     padding-left: 0;
-    margin-left: -10px;
-    margin-right: -30px;
-    --yel:yellow;
+    padding-right: 0;
+    /* margin-left: -10px;
+    margin-right: -30px; */
+    --yel:rgb(131, 14, 14);
     position: relative;
 }
 footer{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    padding: 50px 100px;
-    background: rgb(156 163 175);
+    padding: 50px 0px;
+    /* background: rgb(156 163 175); */
+    
 }
 footer .container{
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap:20px
 }
 footer .container .sec h2{
     position: relative;
-    color: antiquewhite;
+    color: white;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -44,9 +46,11 @@ footer .container .sec h2::before{
 
 footer .container .sec p{
     color:aliceblue;
+    padding-left: 10px;
+    width: auto;
 }
 .sci{
-    margin-top: 35px;
+    margin-top: 5vw;
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-gap:50px;
@@ -58,7 +62,7 @@ footer .container .sec p{
     display: inline-block;
     width: 48px;
     height: 48px;
-    background: yellowgreen;
+    background: var(--yel);
     display: grid;
     align-content: center;
     justify-content: center;
@@ -108,28 +112,41 @@ list-style: none;
 color: var(--yel);
 }
 .copyrightText{
-    width: 100%;
+    width: 100vw;
     grid-column: 1/5;
-    background: rgb(156 163 175);
+    /* background: rgb(156 163 175); */
     text-align: center;
     color: white;
 }
 @media(max-width:1000px){
     footer{
+        width: 100vw;
         padding:40px;
     }
     footer .container{
-        width: 100%;
+        width: 100vw;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap:20px;
     }
 }
 @media(max-width:768px){
+    footer{
+        width: 100vw;}
     footer .container{
-        width: 100%;
+        width: 100vw;
         display: grid;
         grid-template-columns: 1fr;
+        
         grid-gap:20px;
+    }
+    footer .container .sec p{
+        color:aliceblue;
+        padding-left: 5px;
+        max-width: 250px;
+        width: auto;
+    }
+    footer .container .sec{
+        display: hidden;
     }
 }

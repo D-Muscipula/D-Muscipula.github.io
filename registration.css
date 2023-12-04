@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vw;
+    height: 100%;
+    
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: orangered;
+}
+section .color:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 600px;
+    background: yellow;
+}
+section .color:nth-child(3) {
+    bottom: 50px;
+    width: 300px;
+    height: 300px;
+    background: green;
+} 
+.box{
+    position: absolute;
+    top: 10vw;
+    max-width: 90%;
+}
+.box .square{
+    position: absolute;
+    background:rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    animation: animateSquares 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+@keyframes animateSquares {
+    0%, 100%
+    {
+        transform: translateY(-40px);
+    }
+    50%
+    {
+        transform: translateY(40px);
+    }
+}
+.box .square:nth-child(1) {
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+.box .square:nth-child(2) {
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+.box .square:nth-child(3) {
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+.box .square:nth-child(4) {
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    
+}
+.box .square:nth-child(5) {
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+.container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background:rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+
+}
+.form
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.form h2
+{
+    position: relative;
+    color: aliceblue;
+    font-size: 24px;
+    margin-bottom: 40px;
+
+}
+
+.form h2::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: white;
+}
+
+.form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox input{
+    width: 100%;
+    background:rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 35px;
+    font-size: 16px;
+    color: grey;
+}  
+.form .inputBox input[type="submit"]
+{
+    background: white;
+    max-width: 100px;
+    padding-left: 0px;
+    cursor:url('xex.png'), pointer;
+    margin-bottom: 20px;
+}
+.forget
+{
+    margin-top: 5px;
+    color: aliceblue;
+}
+.forget p{
+    color: aliceblue;
+}
+.forget a{
+    color: orange;
+    text-decoration: none;
+}
+  

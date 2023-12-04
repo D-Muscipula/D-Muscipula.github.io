@@ -4,166 +4,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/public/styles.css">
-    <title>Изучение иностранных языков</title>
-    <!-- Ваши стили CSS могут быть подключены здесь -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="shortcut icon" href="resources/10579963.png" />
+    <!-- Для footer -->
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="social_media.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link rel="stylesheet" href="different styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--  -->
+    <title>Plurlingva</title>
 </head>
+<!-- overflow-x-hidden -->
 
-<body class="m-0 p-0">
-    <header  class="fixed z-10 mb-5">
-        <div class=""> </div>
-        <nav class=" w-screen bg-gray-400 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-                </a>
-                <div class="flex items-center lg:order-2">
-                    <a href="#" class="text-white dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a>
-                    <a href="#" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Get started</a>
-                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
+<body class=" overflow-x-hidden m-0">
+
+    <header class="bg-slate-100 shadow-md">
+    <nav class="relative  container  mx-auto p-6">
+
+        <!-- flex контейнер -->
+        <div class="flex items-center justify-between">
+            <!-- Логотип -->
+            <div class="pt-2 md:w-1/6 md:scale-125">
+                <img src="resources/Untitled_logo_1_free-file-_2_.svg" alt="Plurlingva" />
+            </div>
+            <!-- Меню -->
+            <div class="hidden md:flex space-x-7 text-xl">
+                <a href="#" class="hover:text-red-600  transform transition duration-200">О нас</a>
+                <a href="#" class="hover:text-red-600 transform transition duration-200">Курсы</a>
+                <a href="#" class="hover:text-red-600 transform transition duration-200">Связаться с нами</a>
+                <a href="#" class="hover:text-red-600 transform transition duration-200">Блог</a>
+                <!-- <a href="#" class="hover:text-red-600">ЭлементЛ</a> -->
+            </div>
+            <!-- Кнопка -->
+            <a href="#" class="hidden md:block
+            p-3 px-6 pt-2 text-white bg-red-700 rounded-full 
+             hover:bg-red-600 transform transition duration-200">
+                Начать
+            </a>
+
+            <!-- Бургер меню -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Меню на телефоне-->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white 
+                sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">О нас</a>
+                <a href="#">Курсы</a>
+                <a href="#">Связаться с нами</a>
+                <a href="#">Блог</a>
+                <!-- <a href="#" >ЭлементЛ</a> -->
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- Hero section -->
+    <main>
+        <section id="hero">
+            <!-- Контейнер  Hero section-->
+            <div
+                class="container  flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-24 space-y-0 md:space-y-0 ">
+
+                <!-- Левый элемент -->
+                <div class="flex flex-col mb-32 space-y-12 
+            md:w-1/2 ">
+                    <h1 class=" text-4xl font-bold text-center
+                    md:max-w-md md:text-5xl md:text-left">
+                        Начните учить язык вместе с нами!</h1>
+                    <!-- max-w-sm  -->
+                    <p class="text-center text-black  
+            md:text-left md:w-5/6">
+                        Добро пожаловать на Plurlingva - ваш идеальный путеводитель в мире изучения иностранных языков!
+                        Мы верим, что знание языков открывает двери к новым возможностям и обогащает нашу жизнь.
+
+                        Присоединяйтесь к нам и окунитесь в увлекательное путешествие обучения.
+
+                        Наши уроки объединяют в себе инновационные методики обучения, интерактивные задания и языковые
+                        игры, чтобы сделать процесс обучения увлекательным и результативным.
+
+                    </p>
+                    <p class="text-center text-black  
+                        md:text-left md:w-5/6">Не упустите шанс погрузиться в многообразие культур и расширить свой
+                        кругозор, обучаясь языкам с
+                        Plurlingva.
+                    </p>
+                    <div class="flex justify-center 
+            md:justify-start">
+                        <a href="#" class="p-3 px-6 pt-2 text-white bg-red-700 rounded-full 
+             hover:bg-red-600 transform transition duration-200">
+                            Начать
+                        </a>
+                    </div>
                 </div>
-                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Home</a>
+                <!-- Изображение -->
+                <div class="md:w-1/2">
+                    <img src="resources/longon.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Фичи -->
+        <section id="features">
+            <!-- flex контейнер -->
+            <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 
+             md:space-y-0 md:space-x-16 md:flex-row">
+                <!-- О нас -->
+                <div class="flex flex-col items-center space-y-12 md:w-1/2">
+                    <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+                        Почему стоит выбрать нас
+                    </h2>
+                    <p class="max-w-sm text-center 
+                    md:text-left">В мире бесчисленного многообразия языковых курсов, выбор правильного пути может быть
+                        ключом к успешному освоению нового языка. Plurlingva предлагает не просто курсы, а целый мир
+                        возможностей для вашего языкового роста.
+                    </p>
+                    <div class=" md:block hidden ">
+                        <img src="resources/Simple_Eiffel_Tower.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12
+                md:space-y-0 md:flex-row">
+                    <!-- факты -->
+                    <div class="flex flex-col  space-y-8
+                    md:w-2/3">
+                        <!-- Факт -->
+                        <div class="shadow-md p-6 flex flex-col space-y-3 
+                            md:space-y-0 md:space-x-6 md:flex-row">
+                            <!-- Заголовок -->
+                            <div class="rounded-l-full bg-red-200 
+                                md:bg-transparent">
+                                <div class="flex items-center space-x-2">
+                                    <div class="px-4 py-2 text-white rounded-full
+                                                md:py-1 bg-red-500">
+                                        1</div>
+                                    <h3 class="text-base font-bold 
+                                                     md:text-lg md:hidden">
+                                        <!-- Ух ты -->
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="hidden  mb-4 text-lg font-bold md:block">
+                                    Инновационный метод обучения
+                                </h3>
+                                <p>
+                                    Plurlingva предлагает уникальный подход к изучению иностранных языков, основанный на
+                                    передовых методах и технологиях. Наши курсы разработаны с использованием последних
+                                    лингвистических исследований, чтобы обеспечить эффективное и увлекательное обучение.
+                                    Мы уверены, что инновации в области образования могут значительно ускорить процесс
+                                    усвоения языков и сделать его более доступным для всех.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Факт -->
+                        <div class="shadow-md p-6 flex flex-col space-y-3 
+                            md:space-y-0 md:space-x-6 md:flex-row">
+                            <!-- Заголовок -->
+                            <div class="rounded-l-full bg-red-200 
+                                md:bg-transparent">
+                                <div class="flex items-center space-x-2">
+                                    <div class="px-4 py-2 text-white rounded-full
+                                                md:py-1 bg-red-500">
+                                        2</div>
+                                    <h3 class="text-base font-bold 
+                                                     md:text-lg md:hidden">
+                                        Ух ты
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                                    Персонализированный подход
+                                </h3>
+                                <p>Мы понимаем, что каждый ученик уникален, и в Plurlingva мы ценим разнообразие стилей
+                                    обучения. Наши курсы разработаны с учетом индивидуальных потребностей студентов,
+                                    предоставляя персонализированный опыт обучения. Благодаря гибкости наших программ,
+                                    вы можете выбирать тот темп и формат, который соответствует вашим личным
+                                    предпочтениям и целям.</p>
+                            </div>
+                        </div>
+
+                        <!-- Факт -->
+                        <div class="shadow-md p-6 flex flex-col space-y-3 
+                            md:space-y-0 md:space-x-6 md:flex-row">
+                            <!-- Заголовок -->
+                            <div class="rounded-l-full bg-red-200 
+                                md:bg-transparent">
+                                <div class="flex items-center space-x-2">
+                                    <div class="px-4 py-2 text-white rounded-full
+                                                md:py-1 bg-red-500">
+                                        3</div>
+                                    <h3 class="text-base font-bold 
+                                                     md:text-lg md:hidden">
+                                        Ух ты
+                                    </h3>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                                    Комплексный подход к обучению
+                                </h3>
+                                <p>Plurlingva предлагает не только уроки языков, но и полноценный образовательный опыт.
+                                    Мы интегрируем в наши курсы ресурсы, способствующие развитию всех аспектов ваших
+                                    языковых навыков: от грамматики и лексики до разговорной практики и культурного
+                                    погружения.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Отзывы -->
+        <section id="testimonials">
+            <!-- Контейнер для заголовка и блоков отзывов -->
+            <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+                <!-- Заголовок -->
+                <h2 class="text-4xl font-bold text-center">
+                    Отзывы
+                </h2>
+                <!-- контейнер для отзывов -->
+                <div class="flex flex-col space-y-9 mt-24 
+                    md:flex-row md:space-x-6 md:space-y-0">
+                    <!-- Отзыв -->
+                    <div class="flex flex-col items-center p-6  rounded-lg bg-slate-100
+                    hover:scale-105 transform transition duration-500 
+                    md:w-1/3">
+                        <img src="resources/testim.jpg" class="rounded-full w-32 -mt-14" alt="Отзыв">
+                        <h5 class="text-lg font-bold">Анна</h5>
+                        <p class="text-sm">Plurlingva - это настоящее открытие для меня! За короткое время я
+                            почувствовала значительное улучшение в своем владении языком благодаря инновационным методам
+                            обучения на платформе. Персонализированный подход и возможность общения с другими студентами
+                            создают уникальное языковое сообщество. С уверенностью могу сказать, что Plurlingva - мой
+                            ключ к языковой свободе!
+
+                        </p>
+                    </div>
+
+                    <!-- Отзыв -->
+                    <div class="flex flex-col items-center p-6  rounded-lg bg-slate-100
+                    hover:scale-105 transform transition duration-500
+                    md:w-1/3">
+                        <img src="resources/tes.jpg" class="rounded-full w-32 -mt-14" alt="Отзыв">
+                        <h5 class="text-lg font-bold">Лина</h5>
+                        <p class="text-sm">Plurlingva - это не просто обучение, это приключение! Я в восторге от
+                            креативных методов обучения, которые делают уроки увлекательными и запоминающимися. Огромный
+                            плюс - возможность общения с единомышленниками в сообществе Plurlingva. Теперь изучение
+                            иностранных языков стало неотъемлемой частью моей повседневной жизни. Спасибо, Plurlingva,
+                            за такой замечательный опыт обучения!
+
+                        </p>
+                    </div>
+
+
+                    <!-- Отзыв -->
+                    <div class="flex flex-col items-center p-6  rounded-lg bg-slate-100
+                    hover:scale-105 transform transition duration-500
+                    md:w-1/3">
+                        <img src="resources/istockphoto-1410107504-612x612.jpg" class="rounded-full w-32 -mt-14"
+                            alt="Отзыв">
+                        <h5 class="text-lg font-bold">Михаил</h5>
+                        <p class="text-sm">Plurlingva предоставляет не просто уроки, а настоящий погружающий опыт в
+                            изучение языка. Курс разработан с учетом моих потребностей, а разнообразие ресурсов помогло
+                            мне овладеть не только формальными языковыми правилами, но и реальными навыками общения.
+                            Очень доволен результатами и рекомендую всем, кто серьезно относится к изучению иностранных
+                            языков.
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Кнопка -->
+                <div class="my-16">
+                    <a href="#" class="self-baseline
+                        p-3 px-6 pt-2 text-white bg-red-700 rounded-full 
+                         hover:bg-red-600 transform transition duration-200">
+                        Начать
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer_container ">
+        <footer class="bg-gray-900">
+            <div class="md:ml-6 container bg-">
+                <div class=" sec abotus">
+                    <h2>О нас</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam inventore consequatur,
+                        adipisci vel saepe, fugit minus aperiam a neque impedit doloremque necessitatibus sed
+                        exercitationem, recusandae iusto illo ex. Officiis, magni?</p>
+                    <ul class="sci">
+                        <li><a class="social__icon git" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li><a class="social__icon twitter" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
+                            <a class="social__icon linkedin" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Быстрые ссылки</h2>
+                    <ul>
+                        <li><a href="#">О</a></li>
+                        <li><a href="#">FAG</a></li>
+                        <li><a href="#">О</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quicklinks">
+                    <h2>Курсы</h2>
+                    <ul>
+                        <li><a href="#">Английский</a></li>
+                        <li><a href="#">Немецкий</a></li>
+                        <li><a href="#">Французский</a></li>
+                        <li><a href="#">Испанский</a></li>
+                        <li><a href="#">Итальянский</a></li>
+                        <li><a href="#">Турецкий</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec contact">
+                    <h2>Свяжитесь с нами</h2>
+                    <ul class="info">
+                        <li>
+                            <span></span>
+                            <span>г.Москва Улица Кузнецова,д.3</span>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
+                            <span></span>
+                            <p><a href="tel:88005553535">88005553535</a></p>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            <span></span>
+                            <p><a href="email:default@gmail.com">default@gmail.com</a></p>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    
-    <main class="container mx-auto">
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Добро пожаловать на сайт по изучению иностранных языков</h2>
-            <p class="text-gray-700">Текст пояснения о важности изучения иностранных языков.</p>
-        </section>
-    
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Наши курсы</h2>
-            <!-- Пример: -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Курс английского языка</h3>
-                    <p class="text-gray-700">Краткое описание курса.</p>
-                    <a href="#" class="text-blue-500 mt-2 inline-block">Подробнее</a>
-                </div>
-                <!-- Добавьте другие курсы здесь -->
-            </div>
-        </section>
-    
-        <section>
-            <h2 class="text-2xl font-bold mb-4">Отзывы учеников</h2>
-            <!-- Пример: -->
-            <div class="flex space-x-4">
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <p class="text-gray-700">Отзыв ученика о курсе. - Имя ученика</p>
-                </div>
-                <!-- Добавьте другие отзывы здесь -->
-            </div>
-        </section>
-    </main>
-        
-   
-<div class ="footer_container">
-    <footer>
-        <div class="container">
-            <div class = "sec abotus">
-                <h2>О нас</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam inventore consequatur, adipisci vel saepe, fugit minus aperiam a neque impedit doloremque necessitatibus sed exercitationem, recusandae iusto illo ex. Officiis, magni?</p>
-       <ul class = "sci">
-        <li><a class="social__icon git" href="#">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-          <li><a class="social__icon twitter" href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a class="social__icon linkedin" href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-       </ul>
-            </div>
-        <div class="sec quicklinks">
-            <h2>Быстрые ссылки</h2>
-            <ul>
-                <li><a href = "#">О</a></li>
-                <li><a href = "#">FAG</a></li>
-                <li><a href = "#">О</a></li>
-                <li><a href = "#">Помощь</a></li>
-                <li><a href = "#">Помощь</a></li>
-                <li><a href = "#">Контакты</a></li>
-            </ul>
+        </footer>
+        <script src="script.js"></script>
+        <div class="copyrightText bg-gray-900">
+            <p>Школа Доминика Де Коко. Все права защищены</p>
         </div>
 
-        <div class="sec quicklinks">
-            <h2>Курсы</h2>
-            <ul>
-                <li><a href = "#">Английский</a></li>
-                <li><a href = "#">Немецкий</a></li>
-                <li><a href = "#">Французский</a></li>
-                <li><a href = "#">Испанский</a></li>
-                <li><a href = "#">Итальянский</a></li>
-                <li><a href = "#">Турецкий</a></li>
-            </ul>
-        </div>
-        <div class = "sec contact">
-            <h2>Свяжитесь с нами</h2>
-            <ul class="info">
-                <li>
-                    <span></span>
-                    <span>г.Москва Улица Кузнецова,д.3</span>
-                </li>
-                <li>
-                    <span></span>
-                    <p><a href = "tel:88005553535">88005553535</a></p>
-                </li>
-                <li>
-                    <span></span>
-                    <p><a href = "email:default@gmail.com">default@gmail.com</a></p>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </footer>
-    <div class = "copyrightText">
-        <p>Школа Доминика Де Коко. Все права защищены</p>
     </div>
-    
-</div>
-
-    <!-- Ваши скрипты JavaScript могут быть подключены здесь -->
-    <!-- <script src="scripts.js"></script> -->
 </body>
 
 </html>
