@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Plurlingva</title>
 </head>
+
 <body>
 
     <header class="bg-slate-100 shadow-md fixed w-full z-50 ">
@@ -22,7 +24,9 @@
             <div class="flex items-center justify-between">
                 <!-- Логотип -->
                 <div class="pt-2 md:w-1/6 md:scale-125">
-                    <img src="resources/Untitled_logo_1_free-file-_2_.svg" alt="Plurlingva" />
+                    <a href="./index.html"><img src="resources/Untitled_logo_1_free-file-_2_.svg"
+                            alt="Plurlingva" /></a>
+
                 </div>
                 <!-- Меню -->
                 <div class="hidden md:flex space-x-7 text-xl">
@@ -61,39 +65,53 @@
         </nav>
     </header>
 
-    <div class = "max-w-6xl px-5 mx-auto mt-32 text-center"><h1 class="text-4xl font-bold text-center">
-          Начните учить язык вместе с нами!</h1></div>
-    
-
-    <div class="my_container">
-        <div class="box">
-          <span></span>
-          <div class="content">
-            <h2>Собеседование на Английском</h2>
-            <p>Подготовьтесь к собеседованию на английском языке с нашими учебными материалами и освоьте профессиональные фразы.</p>
-            <a href="#">Подробнее</a>
-          </div>
-        </div>
-        <div class="box">
-          <span></span>
-          <div class="content">
-            <h2>Деловая Переписка</h2>
-            <p>Узнайте, как писать официальные письма и электронные сообщения на английском языке для эффективного общения в мире бизнеса.</p>
-            <a href="#">Подробнеe</a>
-          </div>
-        </div>
-        <div class="box">
-          <span></span>
-          <div class="content">
-            <h2>Международные Переговоры</h2>
-            <p>Подготовьтесь к международным переговорам и освоьте важные слова и фразы для достижения успешных сделок</p>
-            <a href="#">Подробнее</a>
-          </div>
-        </div>
-      </div>
+    <div class="max-w-6xl px-5 mx-auto mt-36">
+        <h1 class="text-4xl font-bold text-center">
+            Начните учить язык вместе с нами!</h1>
+        <p class="text-center text-black text-lg mt-10">
+            PlurLingva предлагает три уровня подписок, каждая из которых адаптирована к ваши моментальным потребностям в
+            обучении. Выберите свой уровень - от базового до продвинутого - и наслаждайтесь персонализированными
+            уроками, которые помогут вам достичь языковых высот. PlurLingva предлагает три уровня подписок, каждая из которых адаптирована к ваши моментальным потребностям в обучении. Выберите свой уровень - от базового до продвинутого - и наслаждайтесь персонализированными уроками, которые помогут вам достичь языковых высот.
+            
+        </p>
+        
+    <input type="button" class="h-14 w-6" value="resources/" onClick="document.getElementById('tariffs').scrollIntoView();" />
+    </div>
 
 
-      <div class="footer_container ">
+
+    <div class="my_container" id="tariffs">
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Базовый Уровень</h2>
+                <p>Отличный выбор для тех, кто только начинает свой языковой путь. Получите доступ к базовым урокам,
+                    обучающим играм и понятным объяснениям ключевых языковых понятий.</p>
+                <a href="#">3500₽ в месяц</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Продвинутый Уровень</h2>
+                <p>Для тех, кто стремится к мастерству языка. Получите полный доступ ко всем курсам, включая более
+                    сложные грамматические концепции, разговорные сессии с носителями языка и культурные материалы. </p>
+                <a href="#">7500₽ в месяц</a>
+            </div>
+        </div>
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Премиум Уровень</h2>
+                <p>Все преимущества продвинутого уровня, а также дополнительные возможности обратной связи с опытными
+                    преподавателями и эксклюзивные мероприятия.</p>
+                <a href="#">17500₽ в месяц</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer_container ">
         <footer class="bg-gray-900">
             <div class="md:ml-6 container bg-">
                 <div class=" sec abotus">
@@ -167,4 +185,5 @@
 
     </div>
 </body>
+
 </html>
