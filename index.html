@@ -26,15 +26,16 @@
             <div class="flex items-center justify-between">
                 <!-- Логотип -->
                 <div class="pt-2 md:w-1/6 md:scale-125">
-                    <a href="./index.html"><img src="resources/Untitled_logo_1_free-file-_2_.svg" alt="Plurlingva" /></a>
+                    <a href="./index.html"><img src="resources/Untitled_logo_1_free-file-_2_.svg"
+                            alt="Plurlingva" /></a>
                 </div>
                 <!-- Меню -->
                 <div class="hidden md:flex space-x-7 text-xl">
-                    <a href="#" class="hover:text-red-600  transform transition duration-200">О нас</a>
-                    <a href="#" class="hover:text-red-600 transform transition duration-200">Курсы</a>
-                    <a href="#" class="hover:text-red-600 transform transition duration-200">Блог</a>
+                    <a href="./about.html" class="hover:text-red-600  transform transition duration-200">О нас</a>
+                    <a href="./languages.html" class="hover:text-red-600 transform transition duration-200">Языки</a>
+                    <a href="./blog.html" class="hover:text-red-600 transform transition duration-200">Блог</a>
                     <a href="./tariffs.html" class="hover:text-red-600 transform transition duration-200">Подписка</a>
-                    
+
                     <!-- <a href="#" class="hover:text-red-600">ЭлементЛ</a> -->
                 </div>
                 <!-- Кнопка -->
@@ -54,12 +55,12 @@
 
             <!-- Меню на телефоне-->
             <div class="md:hidden">
-                <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white 
+                <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-[15px] space-y-6 font-bold bg-white
                 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="#">О нас</a>
-                    <a href="#">Курсы</a>
-                    <a href="#">Связаться с нами</a>
-                    <a href="#">Блог</a>
+                    <a href="./about.html">О нас</a>
+                    <a href="./languages.html">Языки</a>
+                    <a href="./blog.html">Блог</a>
+                    <a href="./tariffs.html">Подписка</a>
                     <!-- <a href="#" >ЭлементЛ</a> -->
                 </div>
             </div>
@@ -130,7 +131,7 @@
                         ключом к успешному освоению нового языка. Plurlingva предлагает не просто курсы, а целый мир
                         возможностей для вашего языкового роста.
                     </p>
-                    <div class=" md:block hidden ">
+                    <div class=" md:block ">
                         <img src="resources/Simple_Eiffel_Tower.svg" alt="">
                     </div>
                 </div>
@@ -232,8 +233,6 @@
 
 
 
-
-
         </section>
         <!-- Отзывы -->
         <section id="testimonials">
@@ -309,7 +308,7 @@
 
 
         <!-- CTA Section -->
-        <section id="cta" class="bg-red-700 w-screen">
+        <section id="cta" class="bg-red-700 w-screen mb-0">
             <!-- Flex Container -->
             <div
                 class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
@@ -394,12 +393,13 @@
                 </div>
             </div>
         </footer>
-        <script src="script.js"></script>
         <div class="copyrightText bg-gray-900">
             <p>© 2023 Plurlingva</p>
         </div>
 
     </div>
+    <script src="script.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>

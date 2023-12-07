@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="shortcut icon" href="resources/10579963.png" />
+    <link rel="stylesheet" href="different styles.css">
+    <link rel="stylesheet" href="social_media.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Plurlingva</title>
+</head>
+
+<body>
+
+    <header class="bg-slate-100 shadow-md fixed w-full z-50 ">
+        <nav class="relative  container  mx-auto p-4 ">
+
+            <!-- flex контейнер -->
+            <div class="flex items-center justify-between">
+                <!-- Логотип -->
+                <div class="pt-2 md:w-1/6 md:scale-125">
+                    <a href="./index.html"><img src="resources/Untitled_logo_1_free-file-_2_.svg"
+                            alt="Plurlingva" /></a>
+                </div>
+                <!-- Меню -->
+                <div class="hidden md:flex space-x-7 text-xl">
+                    <a href="#" class="hover:text-red-600  transform transition duration-200">О нас</a>
+                    <a href="#" class="hover:text-red-600 transform transition duration-200">Курсы</a>
+                    <a href="#" class="hover:text-red-600 transform transition duration-200">Блог</a>
+                    <a href="./tariffs.html" class="hover:text-red-600 transform transition duration-200">Подписка</a>
+
+                    <!-- <a href="#" class="hover:text-red-600">ЭлементЛ</a> -->
+                </div>
+                <!-- Кнопка -->
+                <a href="./registration.html" class="hidden md:block
+            p-3 px-6  text-white bg-red-700 rounded-full 
+             hover:bg-red-600 transform transition duration-200">
+                    Войти
+                </a>
+
+                <!-- Бургер меню -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- Меню на телефоне-->
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white 
+                sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#">О нас</a>
+                    <a href="#">Курсы</a>
+                    <a href="#">Связаться с нами</a>
+                    <a href="#">Блог</a>
+                    <!-- <a href="#" >ЭлементЛ</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="max-w-6xl px-5 mx-auto mt-36">
+        <h1 class="text-4xl font-bold text-center">
+            Выберите язык</h1>
+
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-16  mb-16 md:w-2/3 mx-auto">
+        <div class="relative group md:hover:scale-110 hover:scale-105 duration-300">
+            <a href="./languages html/english.html"><img class="h-5/6 max-w-full w-full rounded-lg" src="resources/flag_en_big.jpg"
+                    alt="">
+
+                <div
+                    class="h-5/6 hidden rounded-lg absolute inset-0 items-center justify-center text-white text-lg font-bold bg-black  bg-opacity-50 group-hover:flex">
+                    Английский
+                </div>
+            </a>
+        </div>
+        <div class="relative group md:hover:scale-110 hover:scale-105 duration-300">
+            <a href="./languages html/german.html"><img class="h-5/6 max-w-full w-full rounded-lg" src="resources/Germany-flag.jpg" alt="">
+                <div
+                    class="h-5/6 hidden rounded-lg absolute inset-0 items-center justify-center text-white text-lg font-bold bg-black  bg-opacity-50 group-hover:flex">
+                    Немецкий
+                </div>
+            </a>
+        </div>
+
+        <div class="relative group md:hover:scale-110 hover:scale-105 duration-300">
+            <a href="./languages html/french.html"><img class="h-5/6 max-w-full w-full rounded-lg" src="resources/france.png" alt="">
+            <div
+                class="h-5/6 hidden rounded-lg absolute inset-0 items-center justify-center text-white text-lg font-bold bg-black  bg-opacity-50 group-hover:flex">
+                Французский
+            </div>
+            </a>
+        </div>
+        <div class="relative group md:hover:scale-110 hover:scale-105 duration-300">
+            <a href="./languages html/spanish.html"><img class="h-5/6 max-w-full w-full rounded-lg" src="resources/Spain-Flag.png" alt="">
+                <div
+                    class="h-5/6 hidden rounded-lg absolute inset-0 items-center justify-center text-white text-lg font-bold bg-black  bg-opacity-50 group-hover:flex">
+                    Испанский
+                </div>
+            </a>
+        </div>
+        <div class="relative group md:hover:scale-110 hover:scale-105 duration-300">
+            <a href="./languages html/italian.html"><img class="h-5/6 max-w-full w-full rounded-lg" src="resources/2000px-Flag_of_Italy.svg_.png"
+                    alt="">
+                <div
+                    class="h-5/6 hidden rounded-lg absolute inset-0 items-center justify-center text-white text-lg font-bold bg-black  bg-opacity-50 group-hover:flex">
+                    Итальянский
+                </div>
+            </a>
+        </div>
+        <div class="relative group md:hover:scale-110 hover:scale-105 duration-300">
+            <a href="./languages html/turkish.html"><img class="h-5/6 max-w-full w-full rounded-lg" src="resources/turec.jpg" alt="">
+                <div
+                    class="h-5/6 hidden rounded-lg absolute inset-0 items-center justify-center text-white text-lg font-bold bg-black  bg-opacity-50 group-hover:flex">
+                    Турецкий
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="footer_container ">
+        <footer class="bg-gray-900">
+            <div class="md:ml-6 container bg-">
+                <div class=" sec abotus">
+                    <h2>Выполнил</h2>
+                    <p>Студент группы ИКБО-16-22 Кожнев С.Д.</p>
+                    <ul class="sci">
+                        <li><a class="social__icon git" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li><a class="social__icon twitter" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__icon linkedin" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Быстрые ссылки</h2>
+                    <ul>
+                        <li><a href="#">О</a></li>
+                        <li><a href="#">FAG</a></li>
+                        <li><a href="#">О</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quicklinks">
+                    <h2>Курсы</h2>
+                    <ul>
+                        <li><a href="#">Английский</a></li>
+                        <li><a href="#">Немецкий</a></li>
+                        <li><a href="#">Французский</a></li>
+                        <li><a href="#">Испанский</a></li>
+                        <li><a href="#">Итальянский</a></li>
+                        <li><a href="#">Турецкий</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec contact">
+                    <h2>Свяжитесь с нами</h2>
+                    <ul class="info">
+                        <li>
+                            <span></span>
+                            <span>г.Москва Улица Кузнецова,д.3</span>
+                        </li>
+                        <li>
+                            <span></span>
+                            <p><a href="tel:88005553535">88005553535</a></p>
+                        </li>
+                        <li>
+                            <span></span>
+                            <p><a href="email:default@gmail.com">default@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyrightText bg-gray-900">
+            <p>© 2023 Plurlingva</p>
+        </div>
+
+
+
+
+        <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
