@@ -29,17 +29,18 @@ function Accumulator(startingValue) {
     };
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const box = document.querySelectorAll('.content p');
-    box.forEach((element) => {
-        element.textContent = truncate(element.textContent, 57);
-    });
-});
 
-function truncate(str, maxlength) {
-    if (str.length > maxlength) {
-        return str.slice(0, maxlength) + '…';
-    } else {
-        return str;
-    }
+
+
+function showLoading(direction) {
+    const loadingIndicator = document.createElement('div');
+    loadingIndicator.classList.add('fixed', 'left-0', 'w-full', 'h-full', 'bg-opacity-75', 'bg-gray-500', 'flex', 'items-center', 'justify-center', 'z-50', 'text-gray-500');
+    loadingIndicator.innerHTML = '<i class="fas fa-spinner fa-spin fa-3x"></i>';
+    loadingIndicator.style.top = '25vh';
+    document.body.appendChild(loadingIndicator);
+
+    setTimeout(() => {
+        loadingIndicator.remove();
+        
+    }, 3000);
 }

@@ -31,15 +31,7 @@
     transition: all 0.3s ease;
     z-index: 1;
   }
-  .social__icon.git{
-    cursor:url('xex.png'), pointer;
-  }
-  .social__icon.twitter{
-    cursor:url('cursor.png'), pointer;
-  }
-  .social__icon.linkedin{
-    cursor:url('ScaredCat.png'), pointer;
-  }
+  
   .social__icon:after{
     content: "";
     width: 100%;
@@ -53,20 +45,16 @@
   .social__icon.git:after{
     background: linear-gradient(	rgb(73, 216, 73), rgb(100, 0, 40));
   }
-  .social__icon.twitter:after{
+  .social__icon.telegram:after{
     background: linear-gradient(rgb(119, 119, 199), blue);;
   }
-  .social__icon.linkedin:after{
+  .social__icon.vk:after{
     background: linear-gradient(yellow, rgb(232, 125, 18), red);
   }
   .social__icon:hover {
     transform: translateY(-4px);
     
   }
-  /*
-  .social__icon:hover i{
-     color: #fff;
-  }*/
   
   .social__icon:hover:after{
     transform: translate(0);

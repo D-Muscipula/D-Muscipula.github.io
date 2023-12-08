@@ -30,13 +30,11 @@
                 <div class="hidden md:flex space-x-7 text-xl">
                     <a href="./about.html" class="hover:text-red-600  transform transition duration-200">О нас</a>
                     <a href="./languages.html" class="hover:text-red-600 transform transition duration-200">Языки</a>
-                    <a href="#" class="hover:text-red-600 transform transition duration-200">Блог</a>
+                    <a href="./blog.html" class="hover:text-red-600 transform transition duration-200">Блог</a>
                     <a href="./tariffs.html" class="hover:text-red-600 transform transition duration-200">Подписка</a>
-
-                    <!-- <a href="#" class="hover:text-red-600">ЭлементЛ</a> -->
                 </div>
                 <!-- Кнопка -->
-                <a href="#" class="hidden md:block
+                <a href="./languages.html" class="hidden md:block
             p-3 px-6  text-white bg-red-700 rounded-full 
              hover:bg-red-600 transform transition duration-200">
                     Начать
@@ -52,17 +50,17 @@
 
             <!-- Меню на телефоне-->
             <div class="md:hidden">
-                <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-4 space-y-6 font-bold bg-white 
+                <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-[15px] space-y-6 font-bold bg-white
                 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="#">О нас</a>
-                    <a href="#">Языки</a>
-                    <a href="#">Блог</a>
-                    <a href="#">Подписка</a>
-                    <!-- <a href="#" >ЭлементЛ</a> -->
+                    <a href="./about.html">О нас</a>
+                    <a href="./languages.html">Языки</a>
+                    <a href="./blog.html">Блог</a>
+                    <a href="./tariffs.html">Подписка</a>
                 </div>
             </div>
         </nav>
     </header>
+    
     <section class="max-w-3xl mx-auto my-8 p-8 mt-32 bg-white rounded shadow-md">
         <h2 class="text-3xl font-semibold mb-4">Выполнил</h2>
         <p class="text-gray-700 leading-6">
@@ -122,14 +120,14 @@
 
         <p class="text-gray-700 leading-6 mt-4">
             <strong>Email:</strong> s4-7@yandex.ru<br>
-            <strong>Телефон:</strong> +7 (920) 166-61-28
+            <strong>Телефон:</strong> +8 (800) 555-35-35
         </p>
     </section>
 
     <!-- Карта -->
     <section class="max-w-3xl mx-auto my-8 p-8 bg-white rounded shadow-md">
         <h2 class="text-3xl font-semibold mb-4">Мы на карте</h2>
-        <iframe
+        <iframe class="w-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.3162040265638!2d37.50734787377815!3d55.704251656724885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c6a6531cf9b%3A0x8ceb47a6fc2bc098!2z0JzQuNGH0YPRgNC40L3RgdC60LjQuSDQv9GALiwgMTIg0LrQvtGA0L_Rg9GBIDIsINCc0L7RgdC60LLQsCwgMTE5MTky!5e0!3m2!1sru!2sru!4v1702037214169!5m2!1sru!2sru"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -138,7 +136,76 @@
 
 
 
-    <script src="script.js"></script>
+    <div class="footer_container">
+        <footer class="bg-gray-900">
+            <div class="md:ml-6 container bg-">
+                <div class=" sec abotus">
+                    <h2>Выполнил</h2>
+                    <p>Студент группы ИКБО-16-22 Кожнев С.Д.</p>
+                    <ul class="sci">
+                        <li><a class="social__icon git" href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li><a class="social__icon telegram" href="#">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social__icon vk" href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sec quicklinks">
+                    <h2>Быстрые ссылки</h2>
+                    <ul>
+                        <li><a href="./about.html">О нас</a></li>
+                        <li><a href="#">FAG</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Сообщество</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quicklinks">
+                    <h2>Курсы</h2>
+                    <ul>
+                        <li><a href="./languages html/english.html">Английский</a></li>
+                        <li><a href="./languages html/german.html">Немецкий</a></li>
+                        <li><a href="./languages html/french.html">Французский</a></li>
+                        <li><a href="./languages html/spanish.html">Испанский</a></li>
+                        <li><a href="./languages html/italian.html">Итальянский</a></li>
+                        <li><a href="./languages html/turkish.html">Турецкий</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec contact">
+                    <h2>Свяжитесь с нами</h2>
+                    <ul class="info">
+                        <li>
+
+                            <p>г.Москва, Мичуринский пр.12к2</p>
+                        </li>
+                        <li>
+
+                            <p><a href="tel:88005553535">88005553535</a></p>
+                        </li>
+                        <li>
+
+                            <p><a href="email:default@gmail.com">default@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyrightText bg-gray-900">
+            <p>© 2023 Plurlingva</p>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
